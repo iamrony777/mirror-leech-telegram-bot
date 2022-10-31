@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "mirror-leech-telegram-bot"
+version = "0.1.0"
+description = ""
+authors = ["iamrony777 <iamrony777@pm.me>"]
+readme = "README.md"
+packages = [{include = "mirror_leech_telegram_bot"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+black = {version = "^22.10.0", allow-prereleases = true}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

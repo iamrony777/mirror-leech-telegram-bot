@@ -45,7 +45,7 @@ def start_cleanup():
         rmtree(DOWNLOAD_DIR)
     except:
         pass
-    makedirs(DOWNLOAD_DIR)
+    makedirs(DOWNLOAD_DIR, exist_ok=True)
 
 def clean_all():
     aria2.remove_all(True)
